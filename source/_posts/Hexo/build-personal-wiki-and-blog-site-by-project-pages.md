@@ -1,5 +1,5 @@
 ---
-title: 如何通过 Project pages 搭建个人的 Wiki 和 Blog
+title: 通过 Project pages 搭建个人的 Wiki 和 Blog
 toc: true
 date: 2019-08-25 23:11:33
 tags: [Github,Html,Hexo,Wiki]

@@ -1,5 +1,5 @@
 ---
-title: 如何给 Hexo Blog 插入图片
+title: 给 Hexo Blog 插入图片
 date: 2019-08-21 18:59:05
 tags: [Hexo,Blog]
 categories: Hexo

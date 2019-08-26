@@ -1,5 +1,5 @@
 ---
-title: 如何给 Hexo 文章加密
+title: 给 Hexo 文章加密
 date: 2019-08-20 00:05:33
 tags: [Hexo,Blog]
 categories: [Hexo,Blog]
