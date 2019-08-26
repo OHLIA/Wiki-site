@@ -1,4 +1,4 @@
-# travis_env_init.sh
+sed -i'' "s~git@github.com:~https://${GIT_REPO_TOKEN}@github.com/~" _config.yml# travis_env_init.sh
 # 全局安装 Hexo
 npm install -g hexo
 # 全局安装 Hexo 命令行工具，因为我们是命令行操作
