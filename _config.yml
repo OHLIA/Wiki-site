@@ -154,7 +154,7 @@ theme: wikitten
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: https
+  type: git
   repository: https://github.com/OHLIA/Wiki-site.git
   branch: gh-pages
   
