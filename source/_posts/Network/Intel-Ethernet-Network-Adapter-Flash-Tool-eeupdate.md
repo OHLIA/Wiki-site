@@ -1,5 +1,5 @@
 ---
-title: Intel Ethernet Network Adapter Flash Tool: eeupdate
+title: Intel Ethernet Network Adapter Flash Tool eeupdate
 toc: true
 date: 2019-08-28 15:38:23
 tags: [Intel,Flash,Tool]
