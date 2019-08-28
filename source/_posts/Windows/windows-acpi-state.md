@@ -27,5 +27,6 @@ categories: [Windows]
 
 ## 参考资料
 
-> - [Windows电源状态]([https://wiki.zohead.com/%E6%8A%80%E6%9C%AF/Windows/Windows%E7%94%B5%E6%BA%90%E7%8A%B6%E6%80%81.md](https://wiki.zohead.com/技术/Windows/Windows电源状态.md))
+> - [Windows电源状态](https://wiki.zohead.com/技术/Windows/Windows电源状态.md)
 > - [Advanced Configuration and Power Interface](https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface)
+
