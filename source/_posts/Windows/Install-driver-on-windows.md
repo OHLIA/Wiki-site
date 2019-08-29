@@ -22,41 +22,41 @@ categories: [Windows]
 
    2. 点击 自动搜索更新的驱动程序软件 ；
 
-      ![](Install-Driver-on-Windows/update-driver-online.jpg)
+      ![](install-driver-on-windows/update-driver-online.jpg)
 
-      ![1567057527757](Install-Driver-on-Windows/1567057527757.png)
+      ![1567057527757](install-driver-on-windows/1567057527757.png)
 
 ## 通过 `.inf`[^1] 文件安装
 
    1. 右键点选安装;   
       以 PASSMARK USB 3.0 Loopback 为例：
       
-      ![](Install-Driver-on-Windows/inf-install.png)
+      ![](install-driver-on-windows/inf-install.png)
 
    2. 手动添加安装;  
       以并口打印机为例：
       
-      ![](Install-Driver-on-Windows/Snipaste_2019-08-29_13-25-40.jpg)
+      ![](install-driver-on-windows/Snipaste_2019-08-29_13-25-40.jpg)
       
-      ![](Install-Driver-on-Windows/Snipaste_2019-08-29_13-28-45.jpg)
+      ![](install-driver-on-windows/Snipaste_2019-08-29_13-28-45.jpg)
       
-      ![](Install-Driver-on-Windows/Snipaste_2019-08-29_13-29-42.jpg)
+      ![](install-driver-on-windows/Snipaste_2019-08-29_13-29-42.jpg)
       
-      ![](Install-Driver-on-Windows/Snipaste_2019-08-29_13-30-19.jpg)
+      ![](install-driver-on-windows/Snipaste_2019-08-29_13-30-19.jpg)
       
-      ![](Install-Driver-on-Windows/Snipaste_2019-08-29_13-32-39.jpg)
+      ![](install-driver-on-windows/Snipaste_2019-08-29_13-32-39.jpg)
       
-      ![](Install-Driver-on-Windows/Snipaste_2019-08-29_13-35-25.jpg)
+      ![](install-driver-on-windows/Snipaste_2019-08-29_13-35-25.jpg)
       
-      ![](Install-Driver-on-Windows/Snipaste_2019-08-29_13-35-49.jpg)
+      ![](install-driver-on-windows/Snipaste_2019-08-29_13-35-49.jpg)
       
-      ![1567056987814](Install-Driver-on-Windows/1567056987814.png)
+      ![1567056987814](install-driver-on-windows/1567056987814.png)
       
-      ![1567057029976](Install-Driver-on-Windows/1567057029976.png)
+      ![1567057029976](install-driver-on-windows/1567057029976.png)
       
-      ![1567057103778](Install-Driver-on-Windows/1567057103778.png)
+      ![1567057103778](install-driver-on-windows/1567057103778.png)
       
-      ![](Install-Driver-on-Windows/Snipaste_2019-08-29_13-39-10.jpg)
+      ![](install-driver-on-windows/Snipaste_2019-08-29_13-39-10.jpg)
 
 
 
