@@ -24,7 +24,7 @@ categories: [Windows]
 
       ![](install-driver-on-windows/update-driver-online.jpg)
 
-      ![1567057527757](install-driver-on-windows/1567057527757.png)
+      ![](install-driver-on-windows/1567057527757.png)
 
 ## 通过 `.inf`[^1] 文件安装
 
@@ -50,11 +50,11 @@ categories: [Windows]
       
       ![](install-driver-on-windows/Snipaste_2019-08-29_13-35-49.jpg)
       
-      ![1567056987814](install-driver-on-windows/1567056987814.png)
+      ![](install-driver-on-windows/1567056987814.png)
       
-      ![1567057029976](install-driver-on-windows/1567057029976.png)
+      ![](install-driver-on-windows/1567057029976.png)
       
-      ![1567057103778](install-driver-on-windows/1567057103778.png)
+      ![](install-driver-on-windows/1567057103778.png)
       
       ![](install-driver-on-windows/Snipaste_2019-08-29_13-39-10.jpg)
 
