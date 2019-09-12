@@ -27,7 +27,7 @@ Creating a DOS bootable USB drive with BOOTICE.
   
   ![BOOTICE-PBR-MS-DOS](Creating-a-Bootable-DOS-USB-drive/BOOTICE-PBR)
   
-3. Download the MS-DOS CD image from the following link: https://winworldpc.com/product/ms-dos/7x
+3. Download the MS-DOS CD image from the following link: <https://winworldpc.com/product/ms-dos/7x>
 
    ![MS-DOS-CD](Creating-a-Bootable-DOS-USB-drive/MS-DOS-CD.png)
 
