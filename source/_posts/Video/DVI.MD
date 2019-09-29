@@ -1,8 +1,8 @@
 ---
 title: DVI
 date: 2019-04-15 22:01:13
-tags: DVI
-categories: Video
+tags: [DVI]
+categories: [Video]
 ---
 
 Digital Visual Interface
