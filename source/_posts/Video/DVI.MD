@@ -5,11 +5,7 @@ tags: DVI
 categories: Video
 ---
 
-
-
-
-
-# Digital Visual Interface
+Digital Visual Interface
 
 ## Interface
 
