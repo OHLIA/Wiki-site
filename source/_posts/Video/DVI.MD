@@ -1,7 +1,7 @@
 ---
 title: DVI
 date: 2019-04-15 22:01:13
-tags: [DVI]
+tags: DVI
 categories: Video
 ---
 
