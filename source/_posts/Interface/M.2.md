@@ -6,7 +6,7 @@ tags: M.2
 categories: M.2
 ---
 
-##For Storage
+## For Storage
 
 ### Storage interfaces
 
@@ -26,7 +26,7 @@ M Key: SATA, PCI-E x2, x4
 
 
 
-##For Wireless & Bluetooth
+## For Wireless & Bluetooth
 
 ###Interface
 
