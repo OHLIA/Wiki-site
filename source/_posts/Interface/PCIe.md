@@ -25,9 +25,21 @@ Because the encode scheme is 8b/10b, means transmit 8 bit data need send 10 bit.
 So PCIe 2.0 every lane actual rate  is 5 x 8 / 10 = 4 Gbps = 500 MB/s .  
 PCIe 3.0 1 lane, 8 x 128 /130 = 7.88 Gbps = 984.6 MB/s.
 
+### Interface
+
+PCIe x 16, 89 mm, 164 pin
+
+PCIe x 8, 56 mm, 76 pin
+
+PCIe x 4, 39 mm, 
+
+PCIe x 1, 25 mm, 14 pin
+
 
 
 ## 参考资料
 
 > - [PCI-E总线带宽](https://wiki.zohead.com/技术/硬件/PCI-E/PCI-E总线带宽.md)
 > - [PCI Express](https://en.wikipedia.org/wiki/PCI_Express)
+> - [超能课堂(113) 那些长短不一的PCI-E插槽都有什么不一样？](https://www.expreview.com/57764.html)
+

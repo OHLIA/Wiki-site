@@ -17,8 +17,8 @@ categories: [USB]
 | USB 1.0                                    | 1.5 Mbps <br/>12 Mbit/s | 192 KB/s  | 8b/10b    |              |                   | 1996    |
 | USB 1.1                                    | 12 Mbit/s               | 1536 KB/s | 8b/10b    |              | 5 M               | 1998    |
 | USB 2.0                                    | 480 Mbit/s              | 60 MB/s   | 8b/10b    | 48 MB/s      | 5 M               | 2001    |
-| USB 3.0<br/>USB 3.1 Gen 1<br/>USB 3.2 Gen1 | 5 Gbit/s                | 640 MB/s  | 8b/10b    | 512 MB/s     | 5 M               | 2011    |
-| USB 3.1 Gen  2<br/>USB 3.2 Gen 2           | 10 Gbit/s               | 1280 MB/s | 128b/132b | ~ 1241 MB/s  |                   | 2014    |
+| USB 3.0<br/>USB 3.1 Gen 1<br/>USB 3.2 Gen1 | 5 Gbit/s                | 625MB/s   | 8b/10b    | 500 MB/s     | 5 M               | 2011    |
+| USB 3.1 Gen  2<br/>USB 3.2 Gen 2           | 10 Gbit/s               | 1250 MB/s | 128b/132b | ~ 1212 MB/s  |                   | 2014    |
 | USB 3.2<br/>USB 3.2 Gen 2 x 2              | 20 Gbit/s               | 2560 MB/s |           |              |                   | 2017    |
 | USB 4                                      | 40 Gbit/s               | 5120 MB/s |           |              |                   | 2019    |
 
