@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    
+    <title>Git 命令记录 | OHLIA&#39;s Wiki</title>
+    
+    
+        <meta name="keywords" content="Note,Github,Git">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="基本用法下载 Github 项目 1git clone &amp;lt;Github-repository-URL&amp;gt;  分支查看远程分支 1git branch -a  查看本地分支 1git branch  添加新分支 1git checkout -b &amp;lt;branch-name&amp;gt;  切换分支 12345#切换本地分支git checkout &amp;lt;branch-name&amp;gt;#切换">
+<meta name="keywords" content="Note,Github,Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git 命令记录">
+<meta property="og:url" content="http://OHLIA.github.io/Wiki-site/wiki/Git/git-command-note/index.html">
+<meta property="og:site_name" content="OHLIA&#39;s Wiki">
+<meta property="og:description" content="基本用法下载 Github 项目 1git clone &amp;lt;Github-repository-URL&amp;gt;  分支查看远程分支 1git branch -a  查看本地分支 1git branch  添加新分支 1git checkout -b &amp;lt;branch-name&amp;gt;  切换分支 12345#切换本地分支git checkout &amp;lt;branch-name&amp;gt;#切换">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2021-03-31T01:15:08.924Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Git 命令记录">
+<meta name="twitter:description" content="基本用法下载 Github 项目 1git clone &amp;lt;Github-repository-URL&amp;gt;  分支查看远程分支 1git branch -a  查看本地分支 1git branch  添加新分支 1git checkout -b &amp;lt;branch-name&amp;gt;  切换分支 12345#切换本地分支git checkout &amp;lt;branch-name&amp;gt;#切换">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="OHLIA&#39;s Wiki" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/Wiki-site/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/Wiki-site/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Wiki-site/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/Wiki-site/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/Wiki-site/css/style.css">
+    <script src="/Wiki-site/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/Wiki-site/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/Wiki-site/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/Wiki-site/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/Wiki-site/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">OHLIA&#39;s Wiki</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/Wiki-site/">首页</a>
+                
+                    <a class="main-nav-link" href="/Wiki-site/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/Wiki-site/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/Wiki-site/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/Wiki-site/about">关于</a>
+                
+                    <a class="main-nav-link" href="https://ohlia.github.io">Blog</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/Wiki-site/',
+        CONTENT_URL: '/Wiki-site/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/Wiki-site/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/Wiki-site/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/Wiki-site/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/Wiki-site/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/Wiki-site/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/Wiki-site/about">关于</a></td>
+                
+                    <td><a class="main-nav-link" href="https://ohlia.github.io">Blog</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Android
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Android/Android架构/">Android 架构</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Computer
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Computer/structure-of-computer/">X86 电脑硬件架构</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            DOS
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/DOS/Creating-a-Bootable-DOS-USB-drive/">Creating a Bootable DOS USB drive</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            EFI
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/EFI/Creating-a-Bootable-USB-drive-with-UEFI-Shell/">Creating a Bootable USB drive with UEFI Shell</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Git
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Git/config-multi-git-account/">配置多个 GIT 账号</a></li>  <li class="file active"><a href="/Wiki-site/wiki/Git/git-command-note/">Git 命令记录</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Hexo
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Hexo/build-blog-by-hexo/">使用 Hexo 搭建博客</a></li>  <li class="file"><a href="/Wiki-site/wiki/Hexo/encrypt-hexo-post/">给 Hexo 文章加密</a></li>  <li class="file"><a href="/Wiki-site/wiki/Hexo/insert-image-to-hexo-blog/">给 Hexo Blog 插入图片</a></li>  <li class="file"><a href="/Wiki-site/wiki/Hexo/github-branch-hexo-config-backup/">Github 分支备份 Hexo 配置</a></li>  <li class="file"><a href="/Wiki-site/wiki/Hexo/config-personal-wiki-by-hexo-theme-Wikitten/">通过 hexo-theme-Wikitten 配置个人 Wiki</a></li>  <li class="file"><a href="/Wiki-site/wiki/Hexo/build-personal-wiki-and-blog-site-by-project-pages/">通过 Project pages 搭建个人的 Wiki 和 Blog</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Interface
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Interface/M.2/">M.2</a></li>  <li class="file"><a href="/Wiki-site/wiki/Interface/USB/">USB</a></li>  <li class="file"><a href="/Wiki-site/wiki/Interface/PCIe/">PCIe</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Linux
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Linux/ubuntu-16.04-root/">Ubuntu 16.04 设置 root 账号登录</a></li>  <li class="file"><a href="/Wiki-site/wiki/Linux/ubuntu-18.04-root/">Ubuntu 18.04 开启 root 账户登录</a></li>  <li class="file"><a href="/Wiki-site/wiki/Linux/ubuntu-18.04-hibernate/">Ubuntu 18.04 开启 S4 休眠功能</a></li>  <li class="file"><a href="/Wiki-site/wiki/Linux/test-tpm-module-on-linux/">Test TPM module on Linux</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Markdown
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Markdown/typora-edit-markdown-document/">使用 Typore 编辑 Markdown 文档</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Network
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Network/Intel-Ethernet-Network-Adapter-Flash-Tool-eeupdate/">Intel Ethernet Network Adapter Flash Tool eeupdate</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Test
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Test/Test-for-travis-ci/">Test for Travis-CI</a></li>  <li class="file"><a href="/Wiki-site/wiki/Test/hello-world/">Hello World</a></li>  <li class="file"><a href="/Wiki-site/wiki/Test/测试用页/">测试用页</a></li>  <li class="file"><a href="/Wiki-site/wiki/Test/测试用页2/">测试用页2</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Video
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Video/DVI/">DVI</a></li>  <li class="file"><a href="/Wiki-site/wiki/Video/DP/">DP</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Windows
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki-site/wiki/Windows/install-windows/">安装 Windows 系统</a></li>  <li class="file"><a href="/Wiki-site/wiki/Windows/install-windows-with-wim-size-larger-than-4g/">Windows 镜像文件大于 4G 的安装方法</a></li>  <li class="file"><a href="/Wiki-site/wiki/Windows/windows-10-start-menu-backup/">备份恢复 Windows 10 开始菜单</a></li>  <li class="file"><a href="/Wiki-site/wiki/Windows/make-windows-boot-devices-for-legacy-mode-by-cmd/">通过 CMD 制作 Windows Legacy 启动设备</a></li>  <li class="file"><a href="/Wiki-site/wiki/Windows/windows-acpi-state/">Windows 电源状态</a></li>  <li class="file"><a href="/Wiki-site/wiki/Windows/install-driver-on-windows/">Install Driver on Windows</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-Git/git-command-note" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/Wiki-site/categories/Git/">Git</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/Wiki-site/tags/Git/">Git</a>, <a class="tag-link" href="/Wiki-site/tags/Github/">Github</a>, <a class="tag-link" href="/Wiki-site/tags/Note/">Note</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/Wiki-site/wiki/Git/git-command-note/">
+            <time datetime="2019-08-22T23:39:50.000Z" itemprop="datePublished">2019-08-22</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a href="https://github.com/OHLIA/Wiki-site/raw/writing/source/_posts/Git/git-command-note.md" rel="external nofollow noopener noreferrer" target="_blank"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/OHLIA/Wiki-site/edit/writing/source/_posts/Git/git-command-note.md" rel="external nofollow noopener noreferrer" target="_blank"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/OHLIA/Wiki-site/commits/writing/source/_posts/Git/git-command-note.md" rel="external nofollow noopener noreferrer" target="_blank"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Git 命令记录
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p>下载 Github 项目</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;Github-repository-URL&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><p>查看远程分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></table></figure>
+
+<p>查看本地分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+
+<p>添加新分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;branch-name&gt;</span><br></pre></td></tr></table></figure>
+
+<p>切换分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#切换本地分支</span><br><span class="line">git checkout &lt;branch-name&gt;</span><br><span class="line"></span><br><span class="line">#切换远程分支，切换远程的 new 分支到本地，本地分支名称叫  new</span><br><span class="line">git checkout -b new origin/new</span><br></pre></td></tr></table></figure>
+
+<h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><p>还原至某个版本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard &lt;commit-number&gt;</span><br><span class="line"><span class="comment">#版本 commit 号可用 git log 命令查看。</span></span><br><span class="line"><span class="comment">#不加 commit 号，默认还原至上一个版本。</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><h3 id="单独删除某个文件的所有历史记录"><a href="#单独删除某个文件的所有历史记录" class="headerlink" title="单独删除某个文件的所有历史记录"></a>单独删除某个文件的所有历史记录</h3><ol>
+<li><p>删除相应文件或者文件夹</p>
+<ul>
+<li><strong>执行前请先备份相应的文件或者文件夹。</strong></li>
+<li><code>PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA</code> 更改为要删除的文件或文件夹。</li>
+<li>此处删除文件夹，故需要在前面添加 <code>-r</code> 参数。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --force --index-filter \</span><br><span class="line">  <span class="string">"git rm --cached --ignore-unmatch -r PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA"</span> \</span><br><span class="line">  --prune-empty --tag-name-filter cat -- --all</span><br><span class="line">  &gt; Rewrite 48dc599c80e20527ed902928085e7861e6b3cbe6 (266/266)</span><br><span class="line">  &gt; Ref <span class="string">'refs/heads/master'</span> was rewritten</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>本地记录覆盖到 Github 仓库（所有 Branch 以及 tags）。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin --force --all</span><br><span class="line">&gt; Counting objects: 1074, <span class="keyword">done</span>.</span><br><span class="line">&gt; Delta compression using 2 threads.</span><br><span class="line">&gt; Compressing objects: 100% (677/677), <span class="keyword">done</span>.</span><br><span class="line">&gt; Writing objects: 100% (1058/1058), 148.85 KiB, <span class="keyword">done</span>.</span><br><span class="line">&gt; Total 1058 (delta 590), reused 602 (delta 378)</span><br><span class="line">&gt; To https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</span><br><span class="line">&gt;  + 48dc599...051452f master -&gt; master (forced update)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin --force --tags</span><br><span class="line">&gt; Counting objects: 321, <span class="keyword">done</span>.</span><br><span class="line">&gt; Delta compression using up to 8 threads.</span><br><span class="line">&gt; Compressing objects: 100% (166/166), <span class="keyword">done</span>.</span><br><span class="line">&gt; Writing objects: 100% (321/321), 331.74 KiB | 0 bytes/s, <span class="keyword">done</span>.</span><br><span class="line">&gt; Total 321 (delta 124), reused 269 (delta 108)</span><br><span class="line">&gt; To https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</span><br><span class="line">&gt;  + 48dc599...051452f master -&gt; master (forced update)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>确认远程仓库所有相关记录清除后，强制解除对本地存储库中的所有对象的引用和垃圾收集。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">for</span>-each-ref --format=<span class="string">"delete %(refname)"</span> refs/original | git update-ref --stdin</span><br><span class="line">$ git reflog expire --expire=now --all</span><br><span class="line">$ git gc --prune=now</span><br><span class="line">&gt; Counting objects: 2437, <span class="keyword">done</span>.</span><br><span class="line">&gt; Delta compression using up to 4 threads.</span><br><span class="line">&gt; Compressing objects: 100% (1378/1378), <span class="keyword">done</span>.</span><br><span class="line">&gt; Writing objects: 100% (2437/2437), <span class="keyword">done</span>.</span><br><span class="line">&gt; Total 2437 (delta 1461), reused 1802 (delta 1048)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="删除-Git-服务器文件但是保留本地文件"><a href="#删除-Git-服务器文件但是保留本地文件" class="headerlink" title="删除 Git 服务器文件但是保留本地文件"></a>删除 Git 服务器文件但是保留本地文件</h3><ol>
+<li><p><code>.gitignore</code> 添加要过滤的文件和文件夹</p>
+</li>
+<li><p>执行命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached .</span><br><span class="line">git add .</span><br><span class="line">git commit</span><br><span class="line">git push  -u origin &lt;branch-name&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qq_26710805/article/details/80674006" rel="external nofollow noopener noreferrer" target="_blank">git命令总结记录</a></p>
+<p><a href="https://www.cnblogs.com/kaerxifa/p/10973731.html" rel="external nofollow noopener noreferrer" target="_blank">删除Git服务器文件但是保留本地文件</a></p>
+<p><a href="https://blog.csdn.net/q258523454/article/details/83899911" rel="external nofollow noopener noreferrer" target="_blank">Github: 单独删除某个文件的所有历史记录</a></p>
+<p><a href="https://help.github.com/en/articles/removing-sensitive-data-from-a-repository" rel="external nofollow noopener noreferrer" target="_blank">Removing sensitive data from a repository</a></p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/Wiki-site/wiki/Hexo/config-personal-wiki-by-hexo-theme-Wikitten/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    通过 hexo-theme-Wikitten 配置个人 Wiki
+                
+            </div>
+        </a>
+    
+    
+        <a href="/Wiki-site/wiki/Hexo/github-branch-hexo-config-backup/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Github 分支备份 Hexo 配置</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            OHLIA &copy; 2021 
+            <a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten" rel="external nofollow noopener noreferrer" target="_blank">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        <script src="/Wiki-site/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/Wiki-site/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/Wiki-site/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/Wiki-site/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/Wiki-site/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/Wiki-site/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/Wiki-site/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/Wiki-site/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/Wiki-site/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/Wiki-site/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/Wiki-site/js/main.js"></script>
+
+    </div>
+</body>
